@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#123b73" />
+  <meta name="description" content="เว็บไซต์เรียนออนไลน์ โรงเรียนเนกขัมวิทยา สำหรับนักเรียน ม.1–ม.6 และการศึกษาที่ยืดหยุ่น" />
+  <title>ห้องเรียนออนไลน์ | โรงเรียนเนกขัมวิทยา</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="หน้าแรก">
+      <div class="brand-mark">นว.</div>
+      <div><strong>โรงเรียนเนกขัมวิทยา</strong><span>NEKKHAM WITTAYA SCHOOL</span></div>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="เปิดเมนู" aria-expanded="false">☰</button>
+    <nav id="navLinks">
+      <a href="#home" class="active">หน้าแรก</a>
+      <a href="#courses">รายวิชา</a>
+      <a href="#howto">วิธีใช้งาน</a>
+      <button class="nav-login" id="openLogin">เข้าสู่ระบบ</button>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> LEARN ANYTIME · ANYWHERE</div>
+        <h1>เรียนรู้ได้ทุกที่<br><em>ในแบบของคุณ</em></h1>
+        <p>พื้นที่การเรียนรู้ดิจิทัลสำหรับนักเรียนโรงเรียนเนกขัมวิทยา เรียนรู้ ส่งงาน และติดตามความก้าวหน้าได้ในที่เดียว</p>
+        <div class="hero-actions">
+          <button class="primary-btn" id="heroLogin">เริ่มเรียนเลย <span>↗</span></button>
+          <a class="secondary-btn" href="#courses">สำรวจรายวิชา</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>ม.1–ม.6</strong><span>ระดับชั้นที่รองรับ</span></div>
+          <div><strong>ยืดหยุ่น</strong><span>เรียนตามเวลาที่พร้อม</span></div>
+          <div><strong>ออนไลน์</strong><span>ส่งงานจากอุปกรณ์ของคุณ</span></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="glass-card card-top"><span class="mini-icon">✦</span><div><b>พื้นที่เรียนรู้ของคุณ</b><small>เริ่มต้นบทเรียนใหม่ได้ทุกวัน</small></div></div>
+        <div class="book-stack"><div class="book book-blue"><span>LEARN</span></div><div class="book book-red"><span>GROW</span></div><div class="book book-gold"><span>CREATE</span></div><div class="book-page"></div></div>
+        <div class="glass-card card-bottom"><div class="check-circle">✓</div><div><b>ก้าวหน้าไปทีละขั้น</b><small>เรียนรู้ · ฝึกฝน · ส่งงาน</small></div></div>
+        <div class="spark spark-a">✦</div><div class="spark spark-b">✧</div><div class="spark spark-c">+</div>
+      </div>
+    </section>
+
+    <section class="quick-section" aria-label="ทางลัด">
+      <div class="section-heading"><div><span class="kicker">GET STARTED</span><h2>วันนี้อยากทำอะไร?</h2></div><p>เลือกทางลัดเพื่อไปยังส่วนที่ต้องการ</p></div>
+      <div class="quick-grid">
+        <button class="quick-card" data-action="login"><span class="quick-icon violet">♙</span><b>เข้าสู่ระบบนักเรียน</b><small>ใช้รหัสนักเรียนและรหัสผ่าน</small><span class="arrow">↗</span></button>
+        <a class="quick-card" href="#courses"><span class="quick-icon blue">▤</span><b>เลือกบทเรียน</b><small>ค้นหารายวิชาตามระดับชั้น</small><span class="arrow">↗</span></a>
+        <button class="quick-card" data-action="assignment"><span class="quick-icon orange">⇧</span><b>ส่งงานออนไลน์</b><small>เตรียมรูปถ่ายหรือไฟล์งาน</small><span class="arrow">↗</span></button>
+        <a class="quick-card" href="#howto"><span class="quick-icon green">ⓘ</span><b>คู่มือการใช้งาน</b><small>ดูขั้นตอนเริ่มต้นอย่างง่าย</small><span class="arrow">↗</span></a>
+      </div>
+    </section>
+
+    <section class="courses-section" id="courses">
+      <div class="section-heading"><div><span class="kicker">EXPLORE LEARNING</span><h2>เลือกห้องเรียนของคุณ</h2></div><p>ค้นหารายวิชาตามระดับชั้นหรือคำค้น</p></div>
+      <div class="course-controls">
+        <div class="grade-tabs" id="gradeTabs" role="group" aria-label="เลือกระดับชั้น">
+          <button class="grade-tab selected" data-grade="all">ทั้งหมด</button><button class="grade-tab" data-grade="ม.1">ม.1</button><button class="grade-tab" data-grade="ม.2">ม.2</button><button class="grade-tab" data-grade="ม.3">ม.3</button><button class="grade-tab" data-grade="ม.4">ม.4</button><button class="grade-tab" data-grade="ม.5">ม.5</button><button class="grade-tab" data-grade="ม.6">ม.6</button><button class="grade-tab" data-grade="ยืดหยุ่น">การศึกษาที่ยืดหยุ่น</button>
+        </div>
+        <label class="search-box"><span>⌕</span><input id="courseSearch" type="search" placeholder="ค้นหารายวิชา..." aria-label="ค้นหารายวิชา"></label>
+      </div>
+      <div class="course-grid" id="courseGrid">
+        <article class="course-card" data-grade="ม.1" data-search="วิทยาศาสตร์ สารบริสุทธิ์ ธรรมชาติ"><div class="course-cover cover-science"><span class="cover-symbol">⚗</span><span class="cover-tag">SCIENCE</span></div><div class="course-body"><div class="course-meta"><span>ม.1</span><span>ตัวอย่างรายวิชา</span></div><h3>วิทยาศาสตร์พื้นฐาน</h3><p>สำรวจสารและสมบัติของวัสดุรอบตัว ฝึกคิดแบบนักวิทยาศาสตร์</p><button class="course-link" data-course="วิทยาศาสตร์พื้นฐาน">ดูรายละเอียด <span>→</span></button></div></article>
+        <article class="course-card" data-grade="ม.2" data-search="วิทยาการคำนวณ python เทคโนโลยี coding"><div class="course-cover cover-code"><span class="cover-symbol">&lt;/&gt;</span><span class="cover-tag">COMPUTING</span></div><div class="course-body"><div class="course-meta"><span>ม.2</span><span>ตัวอย่างรายวิชา</span></div><h3>วิทยาการคำนวณ</h3><p>ฝึกคิดเป็นขั้นตอน เริ่มต้นเขียนโปรแกรมและสร้างชิ้นงานดิจิทัล</p><button class="course-link" data-course="วิทยาการคำนวณ">ดูรายละเอียด <span>→</span></button></div></article>
+        <article class="course-card" data-grade="ม.3" data-search="วิทยาศาสตร์ความงาม ทดลอง เคมี"><div class="course-cover cover-lab"><span class="cover-symbol">✺</span><span class="cover-tag">DISCOVERY</span></div><div class="course-body"><div class="course-meta"><span>ม.3</span><span>ตัวอย่างรายวิชา</span></div><h3>วิทยาศาสตร์ในชีวิตประจำวัน</h3><p>เชื่อมโยงความรู้วิทยาศาสตร์กับกิจกรรมและการทดลองใกล้ตัว</p><button class="course-link" data-course="วิทยาศาสตร์ในชีวิตประจำวัน">ดูรายละเอียด <span>→</span></button></div></article>
+        <article class="course-card" data-grade="ม.4" data-search="ชีววิทยา เซลล์ สิ่งมีชีวิต"><div class="course-cover cover-bio"><span class="cover-symbol">❋</span><span class="cover-tag">BIOLOGY</span></div><div class="course-body"><div class="course-meta"><span>ม.4</span><span>ตัวอย่างรายวิชา</span></div><h3>ชีววิทยาเบื้องต้น</h3><p>เรียนรู้กระบวนการทางชีววิทยาและการศึกษาสิ่งมีชีวิตอย่างเป็นระบบ</p><button class="course-link" data-course="ชีววิทยาเบื้องต้น">ดูรายละเอียด <span>→</span></button></div></article>
+        <article class="course-card" data-grade="ม.5" data-search="ชีววิทยา พืช เนื้อเยื่อ"><div class="course-cover cover-plant"><span class="cover-symbol">❧</span><span class="cover-tag">PLANT WORLD</span></div><div class="course-body"><div class="course-meta"><span>ม.5</span><span>ตัวอย่างรายวิชา</span></div><h3>โครงสร้างและหน้าที่ของพืช</h3><p>ทำความเข้าใจเนื้อเยื่อพืชและความสัมพันธ์ระหว่างโครงสร้างกับหน้าที่</p><button class="course-link" data-course="โครงสร้างและหน้าที่ของพืช">ดูรายละเอียด <span>→</span></button></div></article>
+        <article class="course-card" data-grade="ยืดหยุ่น" data-search="การศึกษาที่ยืดหยุ่น เรียนรู้ด้วยตนเอง ส่งงาน"><div class="course-cover cover-flex"><span class="cover-symbol">✧</span><span class="cover-tag">FLEXIBLE LEARNING</span></div><div class="course-body"><div class="course-meta"><span>การศึกษาที่ยืดหยุ่น</span><span>ตัวอย่างพื้นที่เรียนรู้</span></div><h3>ห้องเรียนเรียนรู้ด้วยตนเอง</h3><p>เรียนตามความพร้อม ทำกิจกรรมจากที่บ้าน และส่งผลงานออนไลน์</p><button class="course-link" data-course="ห้องเรียนเรียนรู้ด้วยตนเอง">ดูรายละเอียด <span>→</span></button></div></article>
+      </div>
+      <div class="empty-state" id="emptyState" hidden>ไม่พบรายวิชาที่ตรงกับคำค้น ลองเปลี่ยนระดับชั้นหรือคำค้นดูนะ</div>
+      <p class="demo-note">หมายเหตุ: รายวิชาด้านบนเป็นข้อมูลตัวอย่างสำหรับต้นแบบ สามารถแก้ไขให้ตรงกับรายวิชาจริงของโรงเรียนได้</p>
+    </section>
+
+    <section class="howto-section" id="howto">
+      <div class="howto-copy"><span class="kicker">SIMPLE STEPS</span><h2>เริ่มเรียนออนไลน์<br>ได้ใน 3 ขั้นตอน</h2><p>ออกแบบแนวทางให้ใช้งานได้ทั้งโทรศัพท์ แท็บเล็ต และคอมพิวเตอร์ รวมถึงนักเรียนที่ไม่มีบัญชี Google</p><button class="primary-btn" id="howtoLogin">เข้าสู่ระบบนักเรียน <span>↗</span></button></div>
+      <div class="steps"><div class="step"><div class="step-number">01</div><div><h3>เข้าสู่ระบบ</h3><p>ใช้รหัสนักเรียนและรหัสผ่านที่โรงเรียนออกให้</p></div><span class="step-icon">♙</span></div><div class="step"><div class="step-number">02</div><div><h3>เปิดบทเรียน</h3><p>เลือกชั้นเรียนและรายวิชา แล้วอ่านเนื้อหาหรือทำกิจกรรม</p></div><span class="step-icon">▤</span></div><div class="step"><div class="step-number">03</div><div><h3>ส่งงานและติดตามผล</h3><p>แนบรูปหรือไฟล์งาน แล้วตรวจสอบสถานะการส่ง</p></div><span class="step-icon">✓</span></div></div>
+    </section>
+  </main>
+
+  <footer><div class="footer-brand"><div class="brand-mark">นว.</div><div><strong>โรงเรียนเนกขัมวิทยา</strong><span>พื้นที่เรียนรู้สำหรับทุกคน</span></div></div><p>© <span id="year"></span> ห้องเรียนออนไลน์โรงเรียนเนกขัมวิทยา</p><a href="#home">กลับด้านบน ↑</a></footer>
+
+  <div class="modal-backdrop" id="loginModal" role="dialog" aria-modal="true" aria-labelledby="loginTitle" hidden>
+    <div class="modal"><button class="modal-close" id="closeLogin" aria-label="ปิด">×</button><div class="modal-mark">นว.</div><span class="kicker">STUDENT PORTAL</span><h2 id="loginTitle">เข้าสู่ระบบนักเรียน</h2><p class="modal-description">ต้นแบบหน้าจอเข้าสู่ระบบสำหรับนักเรียนที่มีและไม่มีบัญชี Google</p>
+      <div class="login-tabs"><button class="login-tab selected" data-login-mode="student">รหัสนักเรียน</button><button class="login-tab" data-login-mode="google">บัญชี Google</button></div>
+      <form id="studentLoginForm"><label>รหัสนักเรียน<input id="studentId" name="studentId" autocomplete="username" placeholder="กรอกรหัสนักเรียน" required></label><label>รหัสผ่าน<input id="studentPassword" name="password" type="password" autocomplete="current-password" placeholder="กรอกรหัสผ่าน" required minlength="4"></label><button type="submit" class="primary-btn full-width">เข้าสู่ระบบ <span>→</span></button></form>
+      <div id="googleLoginPanel" hidden><p>การเข้าสู่ระบบด้วย Google จะต้องเชื่อมระบบยืนยันตัวตนจริงก่อนใช้งาน</p><button class="google-btn" id="googleInfo">ดูข้อมูลการเชื่อมต่อ</button></div>
+      <p class="login-warning"><span>ⓘ</span> หน้าจอนี้เป็นเพียงต้นแบบ ยังไม่ได้ตรวจสอบบัญชีจริง ห้ามกรอกรหัสผ่านจริงในเวอร์ชันสาธิต</p><div id="loginMessage" class="form-message" role="status" hidden></div>
+    </div>
+  </div>
+  <div class="modal-backdrop" id="infoModal" role="dialog" aria-modal="true" aria-labelledby="infoTitle" hidden><div class="modal info-modal"><button class="modal-close" id="closeInfo" aria-label="ปิด">×</button><div class="modal-mark">✦</div><span class="kicker">LEARNING SPACE</span><h2 id="infoTitle">รายละเอียดบทเรียน</h2><p id="infoText">รายวิชาตัวอย่าง</p><div class="feature-list"><div>✓ เนื้อหาบทเรียนและสื่อประกอบ</div><div>✓ กิจกรรมและแบบฝึกหัด</div><div>✓ พื้นที่ส่งงานออนไลน์</div></div><p class="login-warning">ส่วนนี้เป็นหน้าตัวอย่าง ต้องเพิ่มเนื้อหาและระบบบันทึกผลจริงก่อนใช้งาน</p><button class="primary-btn full-width" id="infoContinue">เข้าใจแล้ว</button></div></div>
+  <script src="app.js"></script>
+</body>
+</html>
